@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fix the Bourne Bridge Path Crossing — Act Before Tomorrow!</title>
-  <meta name="description" content="Public comment on EEA#16695 closes TOMORROW, Friday, Oct 24, 2025! Help replace the at-grade Sandwich Rd crossing with a safe multimodal overpass." />
-  <meta property="og:title" content="Fix the Bourne Bridge Path Crossing — Act Before Tomorrow!" />
-  <meta property="og:description" content="Comment on EEA#16695 before TOMORROW, Friday, Oct 24, 2025. Support a grade-separated overpass for safety!" />
+  <title>Fix the Bourne Bridge Path Crossing — Act ASAP!</title>
+  <meta name="description" content="Public comment on EEA#16695 closes Friday, Oct 24, 2025! Help replace the at-grade Sandwich Rd crossing with a safe multimodal overpass." />
+  <meta property="og:title" content="Fix the Bourne Bridge Path Crossing — Act Quickly!" />
+  <meta property="og:description" content="Comment on EEA#16695 before Friday, Oct 24, 2025. Support a grade-separated overpass for safety!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://batsonjay.github.io/Bourne-bridge-safety/" />
   <meta property="og:image" content="https://batsonjay.github.io/Bourne-bridge-safety/SocialCard.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Fix the Bourne Bridge Path Crossing — Act Before Tomorrow!" />
-  <meta name="twitter:description" content="Submit comments on EEA#16695 by TOMORROW, Friday, Oct 24, 2025." />
+  <meta name="twitter:title" content="Fix the Bourne Bridge Path Crossing — Act Before FRIDAY!" />
+  <meta name="twitter:description" content="Submit comments on EEA#16695 by Friday, Oct 24, 2025." />
   <meta name="twitter:image" content="https://batsonjay.github.io/Bourne-bridge-safety/SocialCard.jpg" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
 
   <!-- URGENCY BANNER -->
   <div class="fixed top-0 left-0 right-0 bg-red-600 text-white text-center text-sm py-2 px-3 font-semibold z-50">
-    🚨 Public comments on <span class="underline">EEA#<span id="eeaNum">16695</span></span> close <span class="underline">TOMORROW — Friday, Oct 24, 2025</span>! 🚨
+    🚨 Public comments on <span class="underline">EEA#<span id="eeaNum">16695</span></span> close <span class="underline">Friday, Oct 24, 2025</span>! 🚨
   </div>
 
   <!-- HERO -->
@@ -45,7 +45,7 @@
         <a href="#sign" class="inline-flex items-center justify-center rounded-xl bg-amber-400 text-black font-semibold py-3 px-4">Add your name</a>
         <button id="cta-share" class="inline-flex items-center justify-center rounded-xl bg-zinc-800 text-white font-semibold py-3 px-4">Share</button>
       </div>
-      <p class="mt-2 text-xs text-zinc-400">Takes 3 minutes • Comments close TOMORROW!</p>
+      <p class="mt-2 text-xs text-zinc-400">Takes 3 minutes • Comments close FRIDAY, OCTOBER 24, 2025!</p>
     </div>
   </header>
 
@@ -124,7 +124,7 @@
   <section id="comment" class="px-4 sm:px-6 py-6">
     <div class="max-w-xl mx-auto space-y-6">
       <div>
-        <h2 class="text-2xl font-bold text-red-600">Add your voice before EOD TOMORROW!</h2>
+        <h2 class="text-2xl font-bold text-red-600">Add your voice before EOD FRIDAY!</h2>
         <p class="mt-2 text-zinc-300">Massachusetts Executive Office of Energy and Environmental Affairs (EEA) is accepting comments on <span class="font-semibold">EEA#<span id="eeaNum2">16695</span></span> — the Bourne Bridge replacement project.</p>
       </div>
 
@@ -234,7 +234,7 @@ Signed,
     const pageUrl = window.location.href;
     const shareBtn = document.getElementById('cta-share');
     if (shareBtn) shareBtn.onclick = async () => {
-      try { await navigator.share({title: document.title, text: 'Public comments on EEA#'+EEA_NUM+' close TOMORROW — Friday, Oct 24, 2025. Add your voice:', url: pageUrl}); }
+      try { await navigator.share({title: document.title, text: 'Public comments on EEA#'+EEA_NUM+' close Friday, Oct 24, 2025. Add your voice:', url: pageUrl}); }
       catch(e){ navigator.clipboard.writeText(pageUrl); alert('Link copied. Share anywhere!'); }
     };
 
