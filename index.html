@@ -53,7 +53,7 @@
   <section class="px-4 sm:px-6">
     <div class="max-w-xl mx-auto">
       <figure class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900">
-        <img id="gradeImage" src="grade-crossing-image.png" alt="Proposed at‑grade Sandwich Rd crossing near the south end of the Bourne Bridge" class="w-full block" />
+        <img id="gradeImage" src="BBridge.png" alt="Proposed at‑grade Sandwich Rd crossing near the south end of the Bourne Bridge" class="w-full block" />
         <figcaption class="text-xs text-zinc-400 p-3">Illustration of the proposed <span class="font-semibold">at‑grade</span> crossing. We’re urging a <span class="font-semibold">grade‑separated overpass</span> for safety and event capacity.</figcaption>
       </figure>
     </div>
@@ -88,48 +88,54 @@
 
   <!-- HOW TO ACT -->
   <section id="comment" class="px-4 sm:px-6 py-6">
-    <div class="max-w-xl mx-auto space-y-4">
-      <h2 class="text-2xl font-bold">Add your voice before TOMORROW!</h2>
-      <p class="text-zinc-300">Massachusetts Executive Office of Energy and Environmental Affairs (EEA) is accepting comments on <span class="font-semibold">EEA#<span id="eeaNum2">16695</span></span> — the Bourne Bridge replacement project.</p>
-
-      <div class="rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm text-zinc-300">
-        <p class="mb-2 font-semibold">Three fast options:</p>
-        <ol class="list-decimal pl-5 space-y-2">
-          <li>
-            <span class="font-semibold">Portal (preferred):</span>
-            <a id="portalLink" class="underline font-semibold" href="#" target="_blank" rel="noopener">Open the EEA public comment portal</a>
-            <span class="text-zinc-400"> and reference <span class="font-semibold">EEA#16695</span> in your submission.</span>
-          </li>
-          <li>
-            <span class="font-semibold">Email:</span> Click
-            <button id="emailNow" class="underline">compose email</button>
-            to open your mail app pre-filled to the official inbox.
-          </li>
-          <li>
-            <span class="font-semibold">Add your name:</span> Sign the coalition support form below (no emails needed).
-          </li>
-        </ol>
+    <div class="max-w-xl mx-auto space-y-6">
+      <div>
+        <h2 class="text-2xl font-bold">Add your voice before TOMORROW!</h2>
+        <p class="mt-2 text-zinc-300">Massachusetts Executive Office of Energy and Environmental Affairs (EEA) is accepting comments on <span class="font-semibold">EEA#<span id="eeaNum2">16695</span></span> — the Bourne Bridge replacement project.</p>
       </div>
 
-      <label for="nameTown" class="block text-xs text-zinc-400 mt-2">(Optional) Add your name & town to auto-append to your email/comment</label>
-      <input id="nameTown" class="w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" placeholder="Your name, Your town" />
+      <!-- Portal Section -->
+      <div class="space-y-3">
+        <h3 class="text-2xl font-bold">Add your comments to the MassDOT comment portal</h3>
+        <p class="text-zinc-300">
+          <a id="portalLink" class="underline font-semibold" href="#" target="_blank" rel="noopener">Open the EEA public comment portal</a>
+          <span class="text-zinc-400"> and reference <span class="font-semibold">EEA#16695</span> in your submission.</span>
+        </p>
+        <a id="openPortal" class="inline-block text-center rounded-lg bg-zinc-800 text-white font-semibold px-6 py-3" href="#" target="_blank" rel="noopener">Go to portal</a>
+      </div>
 
-      <label for="commentText" class="block text-sm font-semibold mt-3">Suggested comment (edit freely)</label>
-      <textarea id="commentText" class="mt-2 w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" rows="8">I support the Bourne Bridge multimodal path but urge MassDOT to replace the at‑grade Sandwich Rd crossing with a grade‑separated multimodal overpass. Reasons: (1) southbound drivers exiting the bridge are still at highway speed; a beacon is insufficient; (2) path usage will surge once practical crossing exists; (3) most users must immediately cross Sandwich Rd to reach the south‑side Canal Bikeway; (4) large events (e.g., Pan‑Mass Challenge, Best Buddies) create continuous crossings that effectively close the road and cause downhill‑approach crash risks; (5) youth access to the ice rink increases exposure of vulnerable riders. A light, ramped overpass preserves throughput, reduces police‑control needs and better aligns with Vision Zero principles. Reference: EEA#16695.
+      <!-- Email Section -->
+      <div class="space-y-3">
+        <h3 class="text-2xl font-bold">Email the Feedback Contact</h3>
+        <p class="text-zinc-300">According to <a href="https://www.mass.gov/info-details/latest-updates-cape-cod-bridges-program" target="_blank" rel="noopener" class="underline">MassDOT's Cape Cod Bridges Program page</a>, you can email comments directly to the project team.</p>
+        
+        <label for="commentText" class="block text-sm font-semibold mt-3">Suggested comment (edit freely)</label>
+        <textarea id="commentText" class="mt-2 w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" rows="8">I support the Bourne Bridge multimodal path but urge MassDOT to replace the at‑grade Sandwich Rd crossing with a grade‑separated multimodal overpass.
+
+Reasons:
+(1) southbound drivers exiting the bridge are still at highway speed; a beacon is insufficient;
+(2) path usage will surge once practical crossing exists;
+(3) most users must immediately cross Sandwich Rd to reach the south‑side Canal Bikeway;
+(4) large events (e.g., Pan‑Mass Challenge, Best Buddies, and more) create continuous crossings that effectively close the road and cause downhill‑approach crash risks;
+(5) youth access to the ice rink increases exposure of vulnerable riders.
+
+A light, ramped overpass preserves throughput, increases safety for path users, and better aligns with Vision Zero principles.
 
 Signed,
 </textarea>
-      <div class="flex gap-2 mt-2">
-        <button id="appendName" class="rounded-lg bg-zinc-800 text-white font-semibold px-4 py-2">Append my name</button>
-        <button id="copyComment" class="rounded-lg bg-amber-400 text-black font-semibold px-4 py-2">Copy comment</button>
-      </div>
 
-      <div class="flex gap-2 mt-3">
-        <a id="emailOfficials" class="flex-1 text-center rounded-lg bg-white text-black font-semibold px-4 py-3" href="#">Email your comment</a>
-        <a id="openPortal" class="flex-1 text-center rounded-lg bg-zinc-800 text-white font-semibold px-4 py-3" href="#" target="_blank" rel="noopener">Go to portal</a>
-      </div>
+        <label for="nameTown" class="block text-xs text-zinc-400 mt-3">(Optional) Add your name & town to auto-append to your email/comment</label>
+        <input id="nameTown" class="w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" placeholder="Your name, Your town" />
 
-      <p class="text-xs text-zinc-500 mt-2">Tip: add any personal experience at this location (near-misses, event management experience, youth riders, etc.).</p>
+        <div class="flex gap-2 mt-3">
+          <button id="appendName" class="rounded-lg bg-zinc-800 text-white font-semibold px-4 py-2">Append my name</button>
+          <button id="copyComment" class="rounded-lg bg-amber-400 text-black font-semibold px-4 py-2">Copy comment</button>
+        </div>
+
+        <a id="emailOfficials" class="inline-block text-center rounded-lg bg-white text-black font-semibold px-6 py-3 mt-2" href="#">Email your comment</a>
+
+        <p class="text-xs text-zinc-500 mt-2">Tip: add any personal experience at this location (near-misses, event management experience, youth riders, etc.).</p>
+      </div>
     </div>
   </section>
 
@@ -186,9 +192,9 @@ Signed,
   <script>
     // Helper to build a mailto
     function buildMailto(to, subject, body, cc=""){
-      const params = new URLSearchParams({ subject, body });
-      if (cc) params.append('cc', cc);
-      return `mailto:${encodeURIComponent(to)}?${params.toString()}`;
+      let url = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      if (cc) url += `&cc=${encodeURIComponent(cc)}`;
+      return url;
     }
     function getCommentWithSignature(){
       const base = document.getElementById('commentText').value.trim();
