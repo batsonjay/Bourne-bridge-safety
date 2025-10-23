@@ -268,26 +268,6 @@ Signed,
       navigator.clipboard.writeText(GOOGLE_FORM_URL);
       alert('Form link copied.');
     };
-
-    // Image fallback search (in case filename differs)
-    (function(){
-      const candidates = [
-        'grade-crossing-image.png','grade-crossing-image.jpg',
-        'assets/grade-crossing-image.png','assets/grade-crossing-image.jpg',
-        'BBridge.png','assets/BBridge.png'
-      ];
-      const img = document.getElementById('gradeImage');
-      function tryNext(i){
-        if(!img) return;
-        if(i >= candidates.length){ return; }
-        const url = candidates[i];
-        const test = new Image();
-        test.onload = ()=>{ img.src = url; };
-        test.onerror = ()=> tryNext(i+1);
-        if (i>0) test.src = url; // first src already set
-      }
-      tryNext(1);
-    })();
   </script>
 </body>
 </html>
