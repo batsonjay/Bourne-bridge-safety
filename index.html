@@ -4,16 +4,16 @@ o<!doctype html>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fix the Bourne Bridge Path Crossing — Act ASAP!</title>
-  <meta name="description" content="Public comment on EEA#16695 closes Friday, Oct 24, 2025! Help replace the at-grade Sandwich Rd crossing with a safe multimodal overpass." />
+  <meta name="description" content="Public comment on 608020 closes Monday, Jan 5, 2026! Help replace the at-grade Sandwich Rd crossing with a safe multimodal overpass." />
   <meta property="og:title" content="Fix the Bourne Bridge Path Crossing — Act Quickly!" />
-  <meta property="og:description" content="Comment on EEA#16695 before Friday, Oct 24, 2025. Support a grade-separated overpass for safety!" />
+  <meta property="og:description" content="Comment on Project File 6080200 before Monday, Jan 5, 2026. Support a grade-separated overpass for safety!" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://batsonjay.github.io/Bourne-bridge-safety/" />
-  <meta property="og:image" content="https://batsonjay.github.io/Bourne-bridge-safety/SocialCard.jpg" />
+  <meta property="og:image" content="https://batsonjay.github.io/Bourne-bridge-safety/images/SocialCard.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Fix the Bourne Bridge Path Crossing — Act Before FRIDAY!" />
-  <meta name="twitter:description" content="Submit comments on EEA#16695 by Friday, Oct 24, 2025." />
-  <meta name="twitter:image" content="https://batsonjay.github.io/Bourne-bridge-safety/SocialCard.jpg" />
+  <meta name="twitter:title" content="Fix the Bourne Bridge Path Crossing — Act Before NOW!" />
+  <meta name="twitter:description" content="Submit comments on Project File 6080200 by Monday, Jan 5, 2026." />
+  <meta name="twitter:image" content="https://batsonjay.github.io/Bourne-bridge-safety/images/SocialCard.jpg" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}</style>
@@ -21,48 +21,51 @@ o<!doctype html>
 <body class="bg-zinc-950 text-zinc-100">
   <script>
     // === CONFIG (filled with provided info) ===
-    const EEA_NUM = "16695";
+    const EEA_NUM = "16695"; // Environmental impact number (prior phase reference)
+    const PROJECT_FILE = "608020"; // MassDOT project file number for this phase
+    const PORTAL_PROJECT_ID = "13868"; // ID used in MassDOT comment portal URL
     const FEEDBACK_EMAIL = "Nicholas.Moreno@mass.gov"; // official comment inbox
     const FEEDBACK_CC = ""; // optional CC
-    const PORTAL_URL = "https://pima.massdotpi.com/public/comment/project-comment-dynamic?project_id=13868"; // official portal landing
+    const PORTAL_URL = `https://pima.massdotpi.com/public/comment/project-comment-dynamic?project_id=${PORTAL_PROJECT_ID}`; // official portal landing
     const GOOGLE_FORM_URL = "https://forms.gle/8aczozfWfL5Skd2a8"; // simple link
     const GOOGLE_FORM_EMBED = "https://docs.google.com/forms/d/e/1FAIpQLSd_4fBMV8hVplrK1uF-Y-5eZ8EAq9gSW80mN20mOxN10yPzcg/viewform?embedded=true"; // iframe src
   </script>
 
   <!-- URGENCY BANNER -->
   <div class="fixed top-0 left-0 right-0 bg-red-600 text-white text-center text-sm py-2 px-3 font-semibold z-50">
-    🚨 Public comments on <span class="underline">Project 13868</span> close <span class="underline">Monday, January 5, 2026</span>! 🚨
+    🚨 ACT NOW! Public comments on <span class="underline">Project File 6080200</span> close <span class="underline">Monday, January 5, 2026</span>! 🚨
   </div>
 
   <!-- HERO -->
-  <header class="p-4 sm:p-6 mt-10">
-    <div class="max-w-xl mx-auto">
-      <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight">Fix the Bourne Bridge Path Crossing</h1>
-      <p class="mt-3 text-zinc-300">The current design ends the new multimodal path with an <span class="font-semibold">at‑grade</span> crossing of Sandwich Rd controlled only by a flashing beacon. This is where <em>highway energy meets human energy</em>. We’re asking MassDOT to evaluate a <span class="font-semibold">grade‑separated overpass</span> instead — before final plans are locked in.</p>
+  <header class="px-4 sm:px-6 lg:px-8 mt-10 md:mt-14 lg:mt-20">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">Fix the Bourne Bridge Path Crossing</h1>
+      <p class="mt-3 md:mt-4 text-zinc-300 md:text-lg">The current design ends the new multimodal path with an <span class="font-semibold">at‑grade</span> crossing of Sandwich Rd controlled only by a flashing beacon. This is where <em>highway energy meets human energy</em>. We’re asking MassDOT to evaluate a <span class="font-semibold">grade‑separated overpass</span> instead — before final plans are locked in.</p>
 
-      <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div class="mt-4 md:mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+        <a href="#action-meeting" class="inline-flex items-center justify-center rounded-xl bg-sky-500 text-black font-semibold py-3 px-4">Attend meeting</a>
         <a href="#comment" class="inline-flex items-center justify-center rounded-xl bg-white text-black font-semibold py-3 px-4">Submit your comment</a>
-        <a href="#sign" class="inline-flex items-center justify-center rounded-xl bg-amber-400 text-black font-semibold py-3 px-4">Add your name</a>
-        <button id="cta-share" class="inline-flex items-center justify-center rounded-xl bg-zinc-800 text-white font-semibold py-3 px-4">Share</button>
+        <a href="#sign" class="inline-flex items-center justify-center rounded-xl bg-amber-400 text-black font-semibold py-3 px-4 text-center">Add your name to our submission</a>
+        <button id="cta-share" class="inline-flex items-center justify-center rounded-xl bg-green-700 text-white font-semibold py-3 px-4">Share</button>
       </div>
-      <p class="mt-2 text-xs text-zinc-400">Takes 3 minutes • Comments close FRIDAY, OCTOBER 24, 2025!</p>
+      <p class="mt-2 text-xs text-zinc-400">Takes 3 minutes • Comments close MONDAY, JANUARY 5, 2026!</p>
     </div>
   </header>
 
   <!-- IMAGE: Proposed grade crossing -->
-  <section class="px-4 sm:px-6">
-    <div class="max-w-xl mx-auto">
+  <section class="px-4 sm:px-6 py-4 md:py-6">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto">
       <figure class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900">
-        <img id="gradeImage" src="BBridge.png" alt="Proposed at‑grade Sandwich Rd crossing near the south end of the Bourne Bridge" class="w-full block" />
+        <img id="gradeImage" src="images/BBridge.png" alt="Proposed at‑grade Sandwich Rd crossing near the south end of the Bourne Bridge" class="w-full block" />
         <figcaption class="text-xs text-zinc-400 p-3">Illustration of the proposed <span class="font-semibold">at‑grade</span> crossing. We're urging a <span class="font-semibold">grade‑separated overpass</span> for safety and event capacity.</figcaption>
       </figure>
     </div>
   </section>
 
   <!-- YouTube Video of Entire Design -->
-  <section class="px-4 sm:px-6 pb-6">
-    <div class="max-w-xl mx-auto space-y-3">
-      <h2 class="text-xl font-bold">Watch the full proposed design</h2>
+  <section class="px-4 sm:px-6 pb-6 md:pb-8 lg:pb-10">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto space-y-3">
+      <h2 class="text-xl md:text-2xl font-bold">Watch the full proposed design</h2>
       <p class="text-zinc-300 text-sm">
         This official MassDOT visualization shows the proposed new Bourne Bridge,
         including the at-grade Sandwich Rd crossing we're seeking to improve.
@@ -91,11 +94,11 @@ o<!doctype html>
   </section>
 
   <!-- PROBLEM + BENEFITS -->
-  <section class="px-4 sm:px-6 py-4">
-    <div class="max-w-xl mx-auto space-y-6">
-      <div>
-        <h2 class="text-2xl font-bold">Why the at‑grade plan is risky</h2>
-        <ul class="list-disc pl-5 space-y-2 text-zinc-300">
+  <section class="px-4 sm:px-6 py-6 md:py-8 lg:py-10">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto md:grid md:grid-cols-2 md:gap-8 lg:gap-12">
+      <div class="space-y-3 md:space-y-4 mb-6 md:mb-0">
+        <h2 class="text-2xl md:text-3xl font-bold">Why the at‑grade plan is risky</h2>
+        <ul class="list-disc pl-5 space-y-2 text-zinc-300 text-sm md:text-base">
           <li><span class="font-semibold">Everyday use will surge:</span> Once a safe, practical crossing exists, path traffic will increase sharply as residents and visitors adopt it for regular rides and walks.</li>
           <li><span class="font-semibold">Event-scale safety risks:</span> More than a dozen organized rides each year — including the Pan-Mass Challenge and Best Buddies — would generate continuous crossings, heightening the chance of vehicle–cyclist conflicts.</li>
           <li><span class="font-semibold">Downhill approach hazards:</span> Riders descending from the bridge will face group slowdowns or stops at the crossing, creating avoidable crash potential.</li>
@@ -105,10 +108,10 @@ o<!doctype html>
         </ul>
       </div>
 
-      <div>
-        <h2 class="text-2xl font-bold">Benefits of an overpass</h2>
-        <p class="text-zinc-300 mt-3">Rather than forcing the path to descend steeply to meet Sandwich Rd at grade, a multimodal overpass could take advantage of the existing elevation on the south side, providing a safe elevated crossing that connects more directly to the Cape Cod Canal bikeway.</p>
-        <ul class="list-disc pl-5 space-y-2 text-zinc-300 mt-3">
+      <div class="space-y-3 md:space-y-4">
+        <h2 class="text-2xl md:text-3xl font-bold">Benefits of an overpass</h2>
+        <p class="text-zinc-300 mt-3 text-sm md:text-base">Rather than forcing the path to descend steeply to meet Sandwich Rd at grade, a multimodal overpass could take advantage of the existing elevation on the south side, providing a safe elevated crossing that connects more directly to the Cape Cod Canal bikeway.</p>
+        <ul class="list-disc pl-5 space-y-2 text-zinc-300 mt-3 text-sm md:text-base">
           <li>Eliminates vehicle–human conflict.</li>
           <li>Accommodates event surges (Pan-Mass, Best Buddies) without closing Sandwich Rd.</li>
           <li>Safer for children and families accessing the ice rink and Canal path.</li>
@@ -121,31 +124,58 @@ o<!doctype html>
     </div>
   </section>
 
+  <!-- WHY THIS IS EASY & COST-EFFECTIVE -->
+  <section class="px-4 sm:px-6 pb-2 md:pb-3 lg:pb-4">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto space-y-3">
+      <h2 class="text-2xl md:text-3xl font-bold">Why this is easy & cost-effective</h2>
+      <ul class="list-disc pl-5 space-y-2 text-zinc-300 text-sm md:text-base">
+        <li>Existing design already requires a berm at high point, which can be reconfigured for new bridge approach on south side of canal access road.</li>
+        <li>Existing design requires substantial grading to reach street grade, and the cost for this can be repurposed into a multi-modal-grade overpass.</li>
+        <li>No private land required; overpass can descend into Bourne Recreation Area (Army Corps of Engineers).</li>
+      </ul>
+      <figure class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900">
+        <img src="images/bike-bridge-illustration.png" alt="Illustration of the proposed Bourne Bridge path and overpass concept" class="w-full h-auto block" />
+      </figure>
+      <figure class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900">
+        <img src="images/image-looking-sw-sq.jpg" alt="Extensive descent path grading avoided" class="w-full h-auto block" />
+      </figure>
+    </div>
+  </section>
+
   <!-- HOW TO ACT -->
-  <section id="comment" class="px-4 sm:px-6 py-6">
-    <div class="max-w-xl mx-auto space-y-6">
-      <div>
-        <h2 class="text-2xl font-bold text-red-600">Add your voice before EOD FRIDAY!</h2>
-        <p class="mt-2 text-zinc-300">Massachusetts Executive Office of Energy and Environmental Affairs (EEA) is accepting comments on <span class="font-semibold">EEA#<span id="eeaNum2">16695</span></span> — the Bourne Bridge replacement project.</p>
+  <section id="comment" class="px-4 sm:px-6 py-6 md:py-8 lg:py-10">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto space-y-6">
+      <div class="space-y-2">
+        <h2 class="text-2xl md:text-3xl font-bold text-red-600">Add your voice before the comment period closes!</h2>
+        <p class="mt-2 text-zinc-300 md:text-lg">massDOT is accepting comments on <span class="font-semibold">Project file #<span id="eeaNum2">608020</span></span> — the Cape Cod Bridges Program.</p>
+        <p class="text-sm md:text-base text-sky-400 font-semibold">There are three ways you can take action right now:</p>
       </div>
 
-      <!-- Portal Section -->
-      <div class="space-y-3">
-        <h3 class="text-2xl font-bold">Add your comments to the MassDOT comment portal</h3>
-        <p class="text-zinc-300">
-          <a id="portalLink" class="underline font-semibold" href="https://pima.massdotpi.com/public/comment/project-comment-dynamic?project_id=13868" target="_blank" rel="noopener">Open the MassDOT comment portal</a>
-          <span class="text-zinc-400"> and reference <span class="font-semibold">Project #13868</span> in your submission.</span>
-        </p>
-        <a id="openPortal" class="inline-block text-center rounded-lg bg-zinc-800 text-white font-semibold px-6 py-3" href="https://pima.massdotpi.com/public/comment/project-comment-dynamic?project_id=13868" target="_blank" rel="noopener">Go to portal</a>
-      </div>
+      <div class="space-y-6">
+        <!-- Action 1: Public meeting -->
+        <div id="action-meeting" class="space-y-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4 md:p-5">
+          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">Action 1: Attend the public meeting</p>
+          <h3 class="text-2xl font-bold">Attend the public meeting on December 16, 2025</h3>
+          <p class="text-zinc-300 text-sm md:text-base">MassDOT is holding a virtual public meeting on Tuesday, December 16, 2025. Show that a safe, grade-separated crossing matters by joining, asking questions, and sharing why this design choice is important to you.</p>
+          <a
+            href="https://www.mass.gov/doc/massdot-cape-cod-bridges-public-meeting-flyer-121625/download"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center justify-center rounded-lg bg-white text-black font-semibold px-4 py-2 text-sm md:text-base"
+          >
+            View meeting details
+          </a>
+        </div>
 
-      <!-- Email Section -->
-      <div class="space-y-3">
-        <h3 class="text-2xl font-bold">Email the Feedback Contact</h3>
-        <p class="text-zinc-300">According to <a href="https://www.mass.gov/info-details/latest-updates-cape-cod-bridges-program" target="_blank" rel="noopener" class="underline">MassDOT's Cape Cod Bridges Program page</a>, you can email comments directly to the project team.</p>
-        
-        <label for="commentText" class="block text-sm font-semibold mt-3">Suggested comment (edit freely)</label>
-        <textarea id="commentText" class="mt-2 w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" rows="8">I support the Bourne Bridge multimodal path but urge MassDOT to replace the at‑grade Sandwich Rd crossing with a grade‑separated multimodal overpass.
+        <!-- Action 2: Portal Section -->
+        <div class="space-y-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4 md:p-5">
+          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">Action 2: Submit a comment via the portal</p>
+          <h3 class="text-2xl font-bold">Add your comments to the MassDOT comment portal</h3>
+          <p class="text-zinc-300">According to <a href="https://www.mass.gov/info-details/latest-updates-cape-cod-bridges-project" target="_blank" rel="noopener" class="underline">MassDOT's Cape Cod Bridges Program page</a>, you must submit comments via the <a id="portalLink" class="underline font-semibold" href="https://pima.massdotpi.com/public/comment/project-comment-dynamic?project_id=13868" target="_blank" rel="noopener">the MassDOT comment portal</a>.</p>
+
+          
+          <label for="commentText" class="block text-sm font-semibold mt-3">Suggested comment (edit freely)</label>
+          <textarea id="commentText" class="mt-2 w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" rows="8">I support the Bourne Bridge multimodal path but urge MassDOT to replace the at‑grade Sandwich Rd crossing with a grade‑separated multimodal overpass. (Project File 608020, project_id 13868)
 
 Reasons:
 (1) Everyday path use will surge once a practical crossing exists.
@@ -160,27 +190,31 @@ A simple, cost-effective solution exists: keep the path elevated and use the pla
 Signed,
 </textarea>
 
-        <label for="nameTown" class="block text-xs text-amber-400 mt-3">(Optional) Add your name & town to auto-append to your email/comment</label>
-        <input id="nameTown" class="w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" placeholder="Your name, Your town" />
+          <label for="nameTown" class="block text-xs text-amber-400 mt-3">(Optional) Add your name & town to auto-append to your email/comment</label>
+          <p class="text-xs text-white mt-2">Tip: add any personal experience at this location (near-misses, event management experience, youth riders, etc.).</p>
+          <input id="nameTown" class="w-full rounded-xl bg-zinc-900 border border-zinc-800 p-3 text-sm" placeholder="Your name, Your town" />
 
-        <div class="flex gap-2 mt-3">
-          <button id="copyComment" class="rounded-lg bg-amber-400 text-black font-semibold px-4 py-2">Copy comment</button>
-          <button id="appendName" class="rounded-lg bg-zinc-800 text-white font-semibold px-4 py-2">Append my name</button>
-          <a id="emailOfficials" class="text-center rounded-lg bg-white text-black font-semibold px-4 py-2" href="#">Email your comment</a>
+          <div class="flex gap-2 mt-3">
+            <button id="appendName" class="rounded-lg bg-zinc-800 text-white font-semibold px-4 py-2">Append my name</button>
+            <button id="copyComment" class="rounded-lg bg-amber-400 text-black font-semibold px-4 py-2">Copy comment</button>
+            <a id="openPortal" class="text-center rounded-lg bg-white text-black font-semibold px-4 py-3" href="https://pima.massdotpi.com/public/comment/project-comment-dynamic?project_id=13868" target="_blank" rel="noopener">Go to portal and paste copied comment</a>
+          </div>
         </div>
-
-        <p class="text-xs text-zinc-500 mt-2">Tip: add any personal experience at this location (near-misses, event management experience, youth riders, etc.).</p>
       </div>
     </div>
   </section>
 
   <!-- SIGNATURE FORM -->
-  <section id="sign" class="px-4 sm:px-6 pb-10">
-    <div class="max-w-xl mx-auto space-y-3">
-      <h2 class="text-2xl font-bold">Add your name (coalition support)</h2>
-      <p class="text-sm text-zinc-300">Don’t want to email? Add your name and town via the form — we’ll include your support with our submission.</p>
+  <section id="sign" class="px-4 sm:px-6 pb-10 md:pb-12 lg:pb-16">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto space-y-3">
+      <div class="space-y-1">
+        <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">Action 3: Add your name</p>
+        <h2 class="text-2xl font-bold">Add your name (coalition support)</h2>
+      </div>
+      <p>Don't want to fill out the massDOT comment form yourself? We've drafted a <a href="documents/dot-608020-comment-nosig.pdf" target="_blank" rel="noopener" class="underline">full submission (PDF)</a> to massDOT.</p>
+      <p class="text-sm text-zinc-300">You can add your name and town via this Google form, and we’ll append the list of supporters with our comment.</p>
       <div class="rounded-2xl overflow-hidden border border-zinc-800">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_4fBMV8hVplrK1uF-Y-5eZ8EAq9gSW80mN20mOxN10yPzcg/viewform?embedded=true" width="640" height="3000" frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[2000px] sm:h-[2000px] md:h-[2000px] bg-white">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_4fBMV8hVplrK1uF-Y-5eZ8EAq9gSW80mN20mOxN10yPzcg/viewform?embedded=true" width="640" height="3000" frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[1600px] md:h-[1800px] lg:h-[2000px] bg-white">Loading…</iframe>
       </div>
       <div class="flex gap-2">
         <a class="flex-1 text-center rounded-lg bg-amber-400 text-black font-semibold px-4 py-3" href="https://forms.gle/8aczozfWfL5Skd2a8" target="_blank" rel="noopener">Open form in new tab</a>
@@ -190,9 +224,9 @@ Signed,
   </section>
 
   <!-- SUPPORT QUOTES -->
-  <section class="px-4 sm:px-6 pb-10">
-    <div class="max-w-xl mx-auto space-y-6">
-      <h2 class="text-2xl font-bold">Support</h2>
+  <section class="px-4 sm:px-6 pb-10 md:pb-12 lg:pb-16">
+    <div class="max-w-xl md:max-w-3xl lg:max-w-5xl mx-auto space-y-6">
+      <h2 class="text-2xl md:text-3xl font-bold">Support</h2>
       
       <div class="rounded-xl bg-zinc-900 border border-zinc-800 p-4">
         <blockquote class="text-zinc-300">
@@ -222,10 +256,6 @@ Signed,
       return nt ? `${base}\n${nt}` : base;
     }
 
-    // Set EEA numbers
-    document.getElementById('eeaNum').textContent = EEA_NUM;
-    document.getElementById('eeaNum2').textContent = EEA_NUM;
-
     // Portal links
     const portal = document.getElementById('portalLink');
     const openPortal = document.getElementById('openPortal');
@@ -236,8 +266,29 @@ Signed,
     const pageUrl = window.location.href;
     const shareBtn = document.getElementById('cta-share');
     if (shareBtn) shareBtn.onclick = async () => {
-      try { await navigator.share({title: document.title, text: 'Public comments on EEA#'+EEA_NUM+' close Friday, Oct 24, 2025. Add your voice:', url: pageUrl}); }
-      catch(e){ navigator.clipboard.writeText(pageUrl); alert('Link copied. Share anywhere!'); }
+      const shareText = 'Help fix the Bourne Bridge path crossing before comments close on Jan 5, 2026:';
+
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: document.title,
+            text: shareText,
+            url: pageUrl,
+          });
+          return;
+        } catch (e) {
+          // User cancelled or share failed; fall through to copy
+        }
+      }
+
+      try {
+        await navigator.clipboard.writeText(pageUrl);
+        alert('Link copied. Share anywhere!');
+      } catch (e) {
+        // If the Clipboard API fails, silently fall back to doing nothing extra
+        // so the browser's native share UX remains the only visible behavior.
+        console.error('Clipboard write failed for share link:', e);
+      }
     };
 
     // Append name
