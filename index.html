@@ -1,9 +1,18 @@
-o<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fix the Bourne Bridge Path Crossing — Act ASAP!</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-026HJCWZTJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-026HJCWZTJ');
+  </script>
   <meta name="description" content="Public comment on 608020 closes Monday, Jan 5, 2026! Help replace the at-grade Sandwich Rd crossing with a safe multimodal overpass." />
   <meta property="og:title" content="Fix the Bourne Bridge Path Crossing — Act Quickly!" />
   <meta property="og:description" content="Comment on Project File 6080200 before Monday, Jan 5, 2026. Support a grade-separated overpass for safety!" />
@@ -217,7 +226,7 @@ Signed,
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_4fBMV8hVplrK1uF-Y-5eZ8EAq9gSW80mN20mOxN10yPzcg/viewform?embedded=true" width="640" height="3000" frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[1600px] md:h-[1800px] lg:h-[2000px] bg-white">Loading…</iframe>
       </div>
       <div class="flex gap-2">
-        <a class="flex-1 text-center rounded-lg bg-amber-400 text-black font-semibold px-4 py-3" href="https://forms.gle/8aczozfWfL5Skd2a8" target="_blank" rel="noopener">Open form in new tab</a>
+        <a id="openSignatureForm" class="flex-1 text-center rounded-lg bg-amber-400 text-black font-semibold px-4 py-3" href="https://forms.gle/8aczozfWfL5Skd2a8" target="_blank" rel="noopener">Open form in new tab</a>
         <button id="copyForm" class="flex-1 text-center rounded-lg bg-zinc-800 text-white font-semibold px-4 py-3">Copy form link</button>
       </div>
     </div>
@@ -244,6 +253,12 @@ Signed,
   </footer>
 
   <script>
+    function trackEvent(name, params = {}) {
+      if (typeof gtag === 'function') {
+        gtag('event', name, params);
+      }
+    }
+
     // Helper to build a mailto
     function buildMailto(to, subject, body, cc=""){
       let url = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -260,12 +275,19 @@ Signed,
     const portal = document.getElementById('portalLink');
     const openPortal = document.getElementById('openPortal');
     if (portal) portal.href = PORTAL_URL;
-    if (openPortal) openPortal.href = PORTAL_URL;
+    if (openPortal) {
+      openPortal.href = PORTAL_URL;
+      openPortal.addEventListener('click', () => {
+        trackEvent('portal_opened', { destination: 'massdot_portal' });
+      });
+    }
 
     // Share helpers
     const pageUrl = window.location.href;
     const shareBtn = document.getElementById('cta-share');
     if (shareBtn) shareBtn.onclick = async () => {
+      trackEvent('share_click', { location: 'hero' });
+
       const shareText = 'Help fix the Bourne Bridge path crossing before comments close on Jan 5, 2026:';
 
       if (navigator.share) {
@@ -298,6 +320,7 @@ Signed,
       const t = document.getElementById('commentText');
       if(!t.value.endsWith('\n')) t.value += '\n';
       t.value += nt + '\n';
+      trackEvent('comment_name_appended', { location: 'comment_section' });
       alert('Added your signature.');
     };
 
@@ -305,6 +328,7 @@ Signed,
     document.getElementById('copyComment').onclick = () => {
       const text = getCommentWithSignature();
       navigator.clipboard.writeText(text);
+      trackEvent('comment_copied', { destination: 'massdot_portal' });
       alert('Comment copied.');
     };
 
@@ -314,11 +338,22 @@ Signed,
       const url = buildMailto(FEEDBACK_EMAIL, `Bourne Bridge Path Crossing — Public Comment (EEA#${EEA_NUM})`, body + `\n\nReference: EEA#${EEA_NUM}`, FEEDBACK_CC);
       window.location.href = url;
     }
-    document.getElementById('emailOfficials').onclick = (e) => { e.preventDefault(); composeToOfficials(); };
+    const emailBtn = document.getElementById('emailOfficials');
+    if (emailBtn) {
+      emailBtn.onclick = (e) => { e.preventDefault(); composeToOfficials(); };
+    }
+
+    const openSignatureForm = document.getElementById('openSignatureForm');
+    if (openSignatureForm) {
+      openSignatureForm.addEventListener('click', () => {
+        trackEvent('signature_form_opened', { location: 'coalition_section' });
+      });
+    }
 
     // Copy form link
     document.getElementById('copyForm').onclick = () => {
       navigator.clipboard.writeText(GOOGLE_FORM_URL);
+      trackEvent('signature_form_link_copied', { location: 'coalition_section' });
       alert('Form link copied.');
     };
   </script>
